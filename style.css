@@ -215,13 +215,6 @@ h1{
     z-index: 1;
 }
 
-.flower{
-    position: absolute;
-    top: 250vw;
-    width: 100%;
-    left: 0;
-}
-
 @media (max-width: 800px) {
     .phon_2{
         top: 160vw;
@@ -239,9 +232,6 @@ h1{
     }
     .q3{
         top: 40vw;
-    }
-    .flower{
-        top: 330vw;
     }
 }
 
@@ -343,6 +333,14 @@ h1{
     } 
 }
 
+
+.flower{
+    position: absolute;
+    top: 250vw;
+    width: 100%;
+    left: 0;
+}
+
 .flowers{
     position: absolute;
     top: 280vw;
@@ -378,15 +376,18 @@ h1{
 }
 
 @media (max-width: 800px) {
+    .flower{
+        top: 390vw;
+    }
     .flowers {
-        top: 370vw;
+        top: 430vw;
     }
     .flowerss {
-        top: 420vw;
+        top: 470vw;
         width: 400px;
     }  
     .flowersss {
-        top: 510vw;
+        top: 580vw;
         width: 300px;
     }  
     .flowerssss {
