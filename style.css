@@ -1,0 +1,245 @@
+header {
+    display: flex;
+    justify-content: space-between; /* Распределяем элементы по краям */
+    align-items: center; /* Центрируем элементы по вертикали */
+    color: #ffffff; /* Цвет текста */
+    padding: 20px 0; /* Отступы сверху и снизу */
+}
+
+/* Навигация */
+.navbar {
+    width: 100%; /* Убедитесь, что навигация занимает всю ширину */
+    padding: 0; /* Убираем отступы, если они не нужны */
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-family: 'Aquarelle', Arial, sans-serif;
+    font-size: 36px; /* Размер шрифта логотипа */
+}
+
+nav {
+    margin-left: auto; /* Сдвигаем навигацию вправо */
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+    font-style: italic;
+}
+
+nav ul {
+    display: flex; /* Выстраиваем элементы списка в строку */
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем отступы */
+}
+
+nav li {
+    margin-left: 40px; /* Отступ между элементами списка */
+}
+
+nav a {
+    color: #ffffff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 18px; /* Размер шрифта ссылок */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+nav a:hover {
+    color: #7DADC3; /* Цвет при наведении */
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 24px;
+        line-height: 42px;
+    }
+
+    .navbar-toggler {
+        border: 0;
+    }
+
+    nav ul {
+        flex-direction: column; /* Вертикальное расположение элементов списка на мобильных устройствах */
+        margin-top: 10px; /* Отступ сверху для списка */
+    }
+
+    nav li {
+        margin-left: 0; /* Убираем отступ между элементами списка на мобильных устройствах */
+        margin-bottom: 10px; /* Отступ между элементами списка */
+    }
+}
+
+body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    padding-top: 0;
+    background-color: #131313;
+}
+
+h1{
+    font-family: 'Aquarelle', Arial, sans-serif;
+    font-size: 300px;
+    color: #ffffff
+}
+
+.name-container {
+    position: relative; /* Позволяет позиционировать дочерние элементы относительно этого контейнера */
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.inizial {
+    width: 80vw; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+}
+
+.imena {
+    position: absolute; /* Абсолютное позиционирование для текста */
+    color: #ffffff; /* Цвет текста */
+    font-family: 'Aquarelle', Arial, sans-serif; /* Шрифт текста */
+    font-size: 96px; /* Размер шрифта */
+    text-align: center; /* Центрируем текст */
+    z-index: 1; /* Убедитесь, что текст выше изображения */
+    top: 40%; /* Сдвигаем текст вниз на 50% от высоты контейнера */
+    left: 50%; /* Сдвигаем текст вправо на 50% от ширины контейнера */
+    transform: translate(-50%, -50%); /* Сдвигаем текст обратно на 50% по ширине и высоте */
+    white-space: nowrap; /* Запрещаем перенос текста */
+}
+
+.zagolovok {
+    width: 100%;
+    align-items: center;
+    top: 200%;
+    margin-left: 0; /* Убираем отступ слева */
+    font-family: 'Aquarelle', Arial, sans-serif;
+    font-size: 96px;
+    color: #ffffff;
+    text-align: center; /* Центрируем текст */
+}
+
+@media (max-width: 575.98px) {
+    .imena, .zagolovok {
+        font-size:40px;
+    }
+}
+
+.container_prigl {
+    display: flex; /* Используем Flexbox */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.priglash {
+    width: 50vw; /* Ширина 50% от ширины окна */
+    height: auto; /* Автоматическая высота */
+    z-index: 1; /* Устанавливаем положительный z-index, чтобы элемент был видимым */
+}
+
+@media (max-width: 575.98px) {
+    .priglash{
+        width: 60vw;
+    }
+}
+
+.phon{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.q1{
+    position: absolute;
+    left: 0;
+    top: 80vw;
+    z-index: -1;
+}
+
+.q2{
+    position: absolute;
+    top: 40vw;
+    right: 0;
+    z-index: -1;
+}
+
+.q3{
+    position: absolute;
+    width: 100%;
+    top: 20vw;
+    left: 0;
+    z-index: 1;
+}
+
+@media (max-width: 575.98px) {
+    .q1{
+        width: 200px;
+        top: 100vw;
+    }
+    .q2{
+        width: 250px;
+    }
+    .q3{
+        top: 40vw;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.countdown {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+}
+
+.time-box {
+    display: flex; /* Изменено на flex */
+    flex-direction: column; /* Устанавливаем направление по вертикали */
+    justify-content: center; /* Центрируем по вертикали */
+    align-items: center; /* Центрируем по горизонтали */
+    background: #ffffff;
+    width: 100px;
+    height: 150px;
+    padding: 10px 10px;
+    margin: 10px 20px; /* Уменьшаем горизонтальный отступ */
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    line-height: 130px; /* Убираем, так как теперь используем flex */
+}
+
+.otscet {
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+    padding: 5px 0; /* Уменьшаем вертикальный отступ */
+    margin: 0; /* Убираем горизонтальные отступы */
+    font-size: 4vh;
+    color: #ffffff;
+}
+
+@media (max-width: 575.98px) {
+    .countdown {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        font-size: 1em;
+        padding: 10px;
+    }
+    .time-box {
+        width: 55px;
+        height: 75px;
+        padding: 5px 5px;
+        margin: 5px 10px; /* Уменьшаем горизонтальный отступ */
+        border-radius: 5px;
+    }
+    .otscet {
+        padding: 2px 0; 
+        font-size: 2vh;
+    }
+}
