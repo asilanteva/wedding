@@ -378,17 +378,17 @@ h1{
 
 @media (max-width: 800px) {
     .flower{
-        top: 390vw;
+        top: 420vw;
     }
     .flowers {
-        top: 430vw;
+        top: 440vw;
     }
     .flowerss {
-        top: 470vw;
+        top: 480vw;
         width: 400px;
     }  
     .flowersss {
-        top: 580vw;
+        top: 600vw;
         width: 300px;
     }  
     .flowerssss {
