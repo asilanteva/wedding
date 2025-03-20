@@ -57,7 +57,7 @@ nav a:hover {
     color: #7DADC3; /* Цвет при наведении */
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 800px) {
     .navbar-brand {
         font-size: 20px;
         line-height: 32px;
@@ -90,7 +90,6 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    padding: 40px, 40px;
     padding-top: 0;
     background-color: #131313;
 }
@@ -139,7 +138,7 @@ h1{
     text-align: center; /* Центрируем текст */
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 800px) {
     .imena, .zagolovok {
         font-size:32px;
     }
@@ -157,9 +156,15 @@ h1{
     z-index: 1; /* Устанавливаем положительный z-index, чтобы элемент был видимым */
 }
 
-@media (max-width: 1100px) {
+.program {
+    margin-top: 1000px;}
+
+@media (max-width: 800px) {
     .priglash{
         width: 60vw;
+    }
+    .program{
+        margin-top: 300px;
     }
 }
 
@@ -211,17 +216,17 @@ h1{
 
 .flower{
     position: absolute;
-    top: 380vw;
+    top: 250vw;
     width: 100%;
     left: 0;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 800px) {
     .phon_2{
-        top: 180vw;
+        top: 160vw;
     }
     .phon_3{
-        top: 220vw
+        top: 200vw
     }
     
     .q1{
@@ -233,6 +238,9 @@ h1{
     }
     .q3{
         top: 40vw;
+    }
+    .flower{
+        top: 380vw;
     }
 }
 
@@ -272,7 +280,7 @@ h1{
     color: #ffffff;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 800px) {
     .countdown {
         width: 100%;
         justify-content: center;
@@ -320,7 +328,7 @@ h1{
 
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 800px) {
     .text {
         font-size: 2vh;
     }
@@ -336,13 +344,134 @@ h1{
 
 .flowers{
     position: absolute;
-    top: 420vw;
+    top: 280vw;
     width: 100%;
     left: 0;
     z-index: -1;
 }
 
-.form{
+.flowerss{
+    position: absolute;
+    top: 320vw;
+    width: 970px;
+    right: 0;
+    z-index: -1;
+}
+
+.flowersss{
+    position: absolute;
+    top: 405vw;
+    width: 770px;
+    right: 0;
+    z-index: -1;
+}
+
+.flowerssss{
+    position: absolute;
+    top: -10vw;
+    right: 60vw;
+    width: 445px;
+    height: 445px;
+    transform: scaleX(-1);
+    z-index: 1;
+}
+
+@media (max-width: 800px) {
+    .flowers {
+        top: 420vw;
+    }
+    .flowerss {
+        top: 460vw;
+        width: 400px;
+    }  
+    .flowersss {
+        top: 580vw;
+        width: 300px;
+    }  
+    .flowerssss {
+        width: 170px;
+        height: 170px;
+        top: -12vw;
+        right: 58vw;
+    }  
+
+}
+
+.form {
     width: 100%;
+    height: auto; /* Устанавливаем высоту контейнера в 100% */
     background-color: #ffffff;
+    position: relative; /* Позволяет позиционировать дочерние элементы относительно этого контейнера */
+    display: flex; /* Используем flexbox */
+    flex-direction: column; /* Располагаем элементы в колонку */
+    justify-content: center; /* Центрируем по вертикали */
+    align-items: center; /* Центрируем по горизонтали */
+    margin: 100px 0; /* Отступы сверху и снизу */
+    padding: 80px; /* Добавляем внутренние отступы для контейнера */
+}
+
+.button {
+    background-color: #7DADC3; /* Цвет фона кнопки */
+    color: #131313; /* Цвет текста */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Убираем рамку */
+    border-radius: 40px; /* Закругленные углы */
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+    font-size: 4vh;
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+    margin-top: 20px; /* Отступ сверху для кнопки */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+}
+
+@media (max-width: 800px) {
+    .form {
+        padding:20px;
+    }
+    .button {
+        font-size: 2vh;
+        cursor: pointer; /* Указатель при наведении */
+        transition: background-color 0.3s; /* Плавный переход цвета */
+        margin-top: 10px; /* Отступ сверху для кнопки */
+    } 
+}
+
+footer {
+    position: relative;
+    height: 460px;
+    width: auto;
+    display: flex; /* Используем Flexbox для расположения элементов */
+    justify-content: space-between; /* Распределяем элементы по краям */
+    align-items: center; /* Центрируем элементы по вертикали */
+    border-top: 2px solid #ffffff; /* Верхняя граница */
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff; /* Нижняя граница */
+    margin-left: 210px; 
+    margin-right: 210px;
+}
+
+.left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left; /* Текст слева */
+}
+
+.right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: left; /* Текст справа */
+}
+
+@media (max-width: 800px) {
+    footer{
+        height: 200px;
+        margin-left: 50px; 
+        margin-right: 50px;
+    } 
 }
