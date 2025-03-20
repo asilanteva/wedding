@@ -8,6 +8,7 @@
     font-family: 'Montserrat Alternates';
     src: url('fonts/MontserratAlternates-Italic.ttf')
 }
+
 header {
     display: flex;
     justify-content: space-between; /* Распределяем элементы по краям */
@@ -17,6 +18,7 @@ header {
 }
 
 /* Навигация */
+
 .navbar {
     width: 100%; /* Убедитесь, что навигация занимает всю ширину */
     padding: 0; /* Убираем отступы, если они не нужны */
@@ -65,6 +67,10 @@ nav a:hover {
         border: 0;
     }
 
+    .navbar-toggler-icon{
+        background-image: url('image/hamburger.svg');
+    }
+
     nav a {
         font-size: 10px;
     }
@@ -84,7 +90,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    padding: 40px;
+    padding: 40px, 40px;
     padding-top: 0;
     background-color: #131313;
 }
