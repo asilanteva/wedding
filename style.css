@@ -1,9 +1,14 @@
 
-@font-face{
+@font-face {
     font-family: 'Aquarelle';
-    src:url('fonts/Aquarelle.ttf');
+    src: url('fonts/Aquarelle.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('fonts/MontserratAlternates-Italic.ttf') format('truetype');
+    font-style: italic;
+}
 header {
     display: flex;
     justify-content: space-between; /* Распределяем элементы по краям */
@@ -27,7 +32,6 @@ header {
 nav {
     margin-left: auto; /* Сдвигаем навигацию вправо */
     font-family: 'Montserrat Alternates', Arial, sans-serif;
-    font-style: italic;
 }
 
 nav ul {
@@ -54,12 +58,16 @@ nav a:hover {
 
 @media (max-width: 575.98px) {
     .navbar-brand {
-        font-size: 24px;
-        line-height: 42px;
+        font-size: 20px;
+        line-height: 32px;
     }
 
     .navbar-toggler {
         border: 0;
+    }
+
+    nav a {
+        font-size: 10px;
     }
 
     nav ul {
@@ -119,6 +127,7 @@ h1{
     align-items: center;
     top: 200%;
     margin-left: 0; /* Убираем отступ слева */
+    margin-top: 150px;
     font-family: 'Aquarelle', Arial, sans-serif;
     font-size: 96px;
     color: #ffffff;
@@ -127,7 +136,7 @@ h1{
 
 @media (max-width: 575.98px) {
     .imena, .zagolovok {
-        font-size:40px;
+        font-size:32px;
     }
 }
 
@@ -157,6 +166,22 @@ h1{
     z-index: -1;
 }
 
+.phon_2{
+    position: absolute;
+    width: 100%;
+    top: 180vw;
+    left: 0;
+    z-index: -1;
+}
+
+.phon_3{
+    position: absolute;
+    width: 100%;
+    top: 220vw;
+    left: 0;
+    z-index: -1;
+}
+
 .q1{
     position: absolute;
     left: 0;
@@ -177,6 +202,13 @@ h1{
     top: 20vw;
     left: 0;
     z-index: 1;
+}
+
+.flower{
+    position: absolute;
+    top: 380vw;
+    width: 100%;
+    left: 0;
 }
 
 @media (max-width: 575.98px) {
@@ -248,4 +280,56 @@ h1{
         padding: 2px 0; 
         font-size: 2vh;
     }
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.text{
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+    font-size: 4vh;
+    color: #ffffff;
+}
+
+.maps{
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+.roza{
+    width: 400px;
+    height: 400px;
+
+}
+
+@media (max-width: 575.98px) {
+    .text {
+        font-size: 2vh;
+    }
+    .maps{
+        width: 250px;
+        height: 175px;
+    }   
+    .roza{
+        width: 200px;
+        height: 200px;
+    } 
+}
+
+.flowers{
+    position: absolute;
+    top: 420vw;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+}
+
+.form{
+    width: 100%;
+    background-color: #ffffff;
 }
