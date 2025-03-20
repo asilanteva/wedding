@@ -305,6 +305,7 @@ h1{
     font-family: 'Montserrat Alternates', Arial, sans-serif;
     font-size: 4vh;
     color: #ffffff;
+    text-align: left;
 }
 
 .maps{
@@ -321,7 +322,7 @@ h1{
 
 @media (max-width: 800px) {
     .text {
-        font-size: 1vh;
+        font-size: 2vh;
     }
     .maps{
         width: 250px;
