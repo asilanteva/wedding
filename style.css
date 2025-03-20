@@ -157,14 +157,15 @@ h1{
 }
 
 .program {
-    margin-top: 1000px;}
+    margin-top: 1000px;
+}
 
 @media (max-width: 800px) {
     .priglash{
         width: 60vw;
     }
     .program{
-        margin-top: 300px;
+        margin-top: 350px;
     }
 }
 
@@ -240,7 +241,7 @@ h1{
         top: 40vw;
     }
     .flower{
-        top: 360vw;
+        top: 330vw;
     }
 }
 
@@ -378,14 +379,14 @@ h1{
 
 @media (max-width: 800px) {
     .flowers {
-        top: 460vw;
+        top: 370vw;
     }
     .flowerss {
-        top: 500vw;
+        top: 420vw;
         width: 400px;
     }  
     .flowersss {
-        top: 600vw;
+        top: 510vw;
         width: 300px;
     }  
     .flowerssss {
