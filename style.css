@@ -240,7 +240,7 @@ h1{
         top: 40vw;
     }
     .flower{
-        top: 500vw;
+        top: 360vw;
     }
 }
 
@@ -378,14 +378,14 @@ h1{
 
 @media (max-width: 800px) {
     .flowers {
-        top: 420vw;
+        top: 460vw;
     }
     .flowerss {
-        top: 460vw;
+        top: 500vw;
         width: 400px;
     }  
     .flowersss {
-        top: 580vw;
+        top: 600vw;
         width: 300px;
     }  
     .flowerssss {
