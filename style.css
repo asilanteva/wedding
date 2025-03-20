@@ -1,3 +1,9 @@
+
+@font-face{
+    font-family: 'Aquarelle';
+    src:url('fonts/Aquarelle.ttf');
+}
+
 header {
     display: flex;
     justify-content: space-between; /* Распределяем элементы по краям */
