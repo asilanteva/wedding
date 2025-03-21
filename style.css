@@ -158,11 +158,21 @@ h1{
     }
 }
 
-.container_prigl {
-    display: flex; /* Используем Flexbox */
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
+.container_prigl{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
+
+
+.location{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+ 
 
 .priglash {
     width: 50vw; /* Ширина 50% от ширины окна */
@@ -210,13 +220,13 @@ h1{
 .q1{
     position: absolute;
     left: 0;
-    top: 80vw;
+    top: 40vw;
     z-index: -1;
 }
 
 .q2{
     position: absolute;
-    top: 40vw;
+    top: -20vw;
     right: 0;
     z-index: -1;
 }
@@ -224,7 +234,7 @@ h1{
 .q3{
     position: absolute;
     width: 100%;
-    top: 20vw;
+    top: -30vw;
     left: 0;
     z-index: 1;
 }
@@ -238,14 +248,11 @@ h1{
     }
     
     .q1{
-        width: 200px;
-        top: 100vw;
+        width: 150px;
+        top: 60vw;
     }
     .q2{
-        width: 250px;
-    }
-    .q3{
-        top: 40vw;
+        width: 200px;
     }
 }
 
@@ -307,14 +314,6 @@ h1{
     }
 }
 
-.location{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-}
-
 .text{
     font-family: 'Montserrat Alternates', Arial, sans-serif;
     font-size: 4vh;
@@ -343,8 +342,8 @@ h1{
         height: 155px;
     }   
     .roza{
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     } 
 }
 
