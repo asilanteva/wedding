@@ -226,7 +226,7 @@ h1{
 
 .q2{
     position: absolute;
-    top: -20vw;
+    top: 0;
     right: 0;
     z-index: -1;
 }
@@ -234,7 +234,8 @@ h1{
 .q3{
     position: absolute;
     width: 100%;
-    top: -30vw;
+    height: 100%;
+    top: 0;
     left: 0;
     z-index: 1;
 }
