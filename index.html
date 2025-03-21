@@ -34,11 +34,11 @@
 </header>
 
 <body>
-    <div class="name-container">
+    <div class="name-container fade-in">
         <img src="image/инициалы.png" class="inizial">
         <p class="imena">Матвей & Анастасия</p>
     </div>
-    <div class="container_prigl">
+    <div class="container_prigl fade-in">
         <img src="image/приглашение.png" class="priglash">
     </div>
     <img src="image/волны_1.png" class="phon">
@@ -48,9 +48,9 @@
     <img src="image/волны.png" class="phon_2">
     <img src="image/здание.png" class="phon_3">
     <div>
-        <p class="zagolovok">До начала торжества:</p>
+        <p class="zagolovok fade-in">До начала торжества:</p>
 
-        <div id="timer" class="countdown">
+        <div id="timer" class="countdown fade-in">
             <div>
                 <div class="time-box" id="days">0</div> 
                 <p class="otscet">дней</p>
@@ -71,30 +71,30 @@
     </div>
 
     <div style="margin: 20px;">
-        <p class="zagolovok" id="locations">Локации</p>
+        <p class="zagolovok fade-in" id="locations">Локации</p>
         <div class="location">
             <div>
-                <p class="text">Grand Hall, банкетный зал<br>
+                <p class="text fade-in">Grand Hall, банкетный зал<br>
                     Гожувская ул., 41В, Саранск</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2333.8328046778497!2d45.22519797660626!3d54.200744410453765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4144091a8b0a559d%3A0x382c33c73ebd1944!2z0JPQvtC20YPQstGB0LrQsNGPINGD0LsuLCA0MdCyLCDQodCw0YDQsNC90YHQuiwg0KDQtdGB0L8uINCc0L7RgNC00L7QstC40Y8sIDQzMDAzMQ!5e0!3m2!1sru!2sru!4v1741023652807!5m2!1sru!2sru" 
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps fade-in"></iframe>" 
             </div>
-            <img src="image/роза.png" class="roza" style="transform: scaleX(-1);">
+            <img src="image/роза.png" class="roza fade-in" style="transform: scaleX(-1);">
                 
         </div>
-        <div class="location">
-            <img src="image/роза.png" class="roza">
+        <div class="location fade-in">
+            <img src="image/роза.png" class="roza fade-in">
             <div>
                 <p class="text">Дворец бракосочетания<br>
                     Советская ул., 47А, Саранск</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2334.93842641934!2d45.1804238766051!3d54.181166311934064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414408933a1a3129%3A0xb0dba92cc047f065!2z0JTQstC-0YDQtdGGINCx0YDQsNC60L7RgdC-0YfQtdGC0LDQvdC40Y8!5e0!3m2!1sru!2sru!4v1742477894648!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2334.93842641934!2d45.1804238766051!3d54.181166311934064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414408933a1a3129%3A0xb0dba92cc047f065!2z0JTQstC-0YDQtdGGINCx0YDQsNC60L7RgdC-0YfQtdGC0LDQvdC40Y8!5e0!3m2!1sru!2sru!4v1742477894648!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps fade-in"></iframe>
             </div>
         </div>
     </div>
 
     <img src="image/цветы8.png" class="flower">
 
-    <div class="program">
+    <div class="program fade-in">
         <img src="image/цветы1.png" class="flowers">
         <img src="image/цветы3.png" class="flowerss">
         <p class="zagolovok" id="program">Программа</p>
@@ -102,8 +102,11 @@
             <img src="image/program.png" class="priglash">
         </div>
     </div>
-    <img src="image/цветы2.png" class="flowersss">
-    <div class="form">
+    <div class="flowersss fade-in">
+        <img src="image/цветы2.png">
+    </div>
+    
+    <div class="form fade-in">
         <p class="zagolovok" id="survey" style="color:#131313; margin-top: 0;">Анкета гостя</p>
         <p class="text" style="color:#131313; text-align: center;">Просим подтвердить свое<br>присутствие по форме ниже</p>
         <button class="button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfWJdDrl3abzUdhBMp7dBi8Oniv3erlMGwVvTtROltbN1GT1g/viewform?usp=header'">
@@ -111,6 +114,25 @@
         </button>
         <img src="image/цветы5.png" class="flowerssss">
     </div>
+
+    <script>
+        // Функция для проверки видимости элементов
+        function checkVisibility() {
+            const elements = document.querySelectorAll('.fade-in');
+            const windowHeight = window.innerHeight;
+    
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top < windowHeight && rect.bottom > 0) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+    
+        // Проверяем видимость при загрузке страницы и прокрутке
+        window.addEventListener('load', checkVisibility);
+        window.addEventListener('scroll', checkVisibility);
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
