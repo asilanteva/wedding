@@ -132,7 +132,7 @@ h1{
     font-size: 96px; /* Размер шрифта */
     text-align: center; /* Центрируем текст */
     z-index: 1; /* Убедитесь, что текст выше изображения */
-    top: 40%; /* Сдвигаем текст вниз на 50% от высоты контейнера */
+    top: 0vw; /* Сдвигаем текст вниз на 50% от высоты контейнера */
     left: 50%; /* Сдвигаем текст вправо на 50% от ширины контейнера */
     transform: translate(-50%, -50%); /* Сдвигаем текст обратно на 50% по ширине и высоте */
     white-space: nowrap; /* Запрещаем перенос текста */
@@ -170,7 +170,7 @@ h1{
 }
 
 .program {
-    margin-top: 1000px;
+    margin-top: 100px;
 }
 
 @media (max-width: 800px) {
@@ -178,7 +178,7 @@ h1{
         width: 60vw;
     }
     .program{
-        margin-top: 350px;
+        margin-top: 50px;
     }
 }
 
@@ -349,15 +349,13 @@ h1{
 
 
 .flower{
-    position: absolute;
-    top: 250vw;
     width: 100%;
     left: 0;
 }
 
 .flowers{
     position: absolute;
-    top: 280vw;
+    top: 10px;
     width: 100%;
     left: 0;
     z-index: -1;
@@ -365,7 +363,7 @@ h1{
 
 .flowerss{
     position: absolute;
-    top: 320vw;
+    top: 120vw;
     width: 970px;
     right: 0;
     z-index: -1;
@@ -373,7 +371,7 @@ h1{
 
 .flowersss{
     position: absolute;
-    top: 405vw;
+    top: 190vw;
     width: 770px;
     right: 0;
     z-index: -1;
@@ -390,18 +388,15 @@ h1{
 }
 
 @media (max-width: 800px) {
-    .flower{
-        top: 430vw;
-    }
     .flowers {
-        top: 500vw;
+        top: 40vw;
     }
     .flowerss {
-        top: 560vw;
+        top: 85vw;
         width: 400px;
     }  
     .flowersss {
-        top: 690vw;
+        top: 195vw;
         width: 300px;
     }  
     .flowerssss {
