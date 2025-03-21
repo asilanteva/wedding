@@ -336,7 +336,7 @@ h1{
 
 @media (max-width: 800px) {
     .text {
-        font-size: 2vh;
+        font-size: 1.8vh;
     }
     .maps{
         width: 230px;
